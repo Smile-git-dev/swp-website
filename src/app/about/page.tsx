@@ -9,7 +9,7 @@ import HistorySection from '@/app/about/components/HistorySection';
 export const metadata = {
   title: 'About Us — Sahawattana Plastic Co., Ltd. (SWP)',
   description:
-    'เรียนรู้เกี่ยวกับ บริษัท สหวัฒนาพลาสติก จำกัด (SWP) — ประวัติบริษัท วิสัยทัศน์ พันธกิจ และความมุ่งมั่นด้านคุณภาพการผลิตพลาสติกกว่า 37 ปี',
+    'เรียนรู้เกี่ยวกับ บริษัท สหวัฒนาพลาสติก จำกัด (SWP) — ประวัติบริษัท วิสัยทัศน์ พันธกิจ และความมุ่งมั่นด้านคุณภาพการผลิตพลาสติกกว่า 39 ปี',
 };
 
 export default function AboutPage() {

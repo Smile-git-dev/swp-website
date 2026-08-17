@@ -9,7 +9,7 @@ import AboutUsSection from '@/app/components/AboutUsSection';
 export const metadata = {
   title: 'SWP — Sahawattana Plastic Co., Ltd. | Qualified Plastic Manufacturing Since 1988',
   description:
-    'บริษัท สหวัฒนาพลาสติก จำกัด (SWP) ผู้นำด้านการผลิตพลาสติก Injection Molding และพัฒนาแม่พิมพ์ ประสบการณ์กว่า 37 ปี รับรองมาตรฐาน ISO 9001, ISO 14001, ISO 45001 และ SMETA',
+    'บริษัท สหวัฒนาพลาสติก จำกัด (SWP) ผู้นำด้านการผลิตพลาสติก Injection Molding และพัฒนาแม่พิมพ์ ประสบการณ์กว่า 39 ปี รับรองมาตรฐาน ISO 9001, ISO 14001, ISO 45001 และ SMETA',
 };
 
 export default function HomePage() {

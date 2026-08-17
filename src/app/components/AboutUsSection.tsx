@@ -8,7 +8,7 @@ const features = [
   {
     icon: Award,
     title: 'ประสบการณ์เชื่อถือได้',
-    description: 'ดำเนินธุรกิจผลิตพลาสติกคุณภาพมากว่า 37 ปี',
+    description: 'ดำเนินธุรกิจผลิตพลาสติกคุณภาพมากว่า 39 ปี',
   },
   {
     icon: ShieldCheck,

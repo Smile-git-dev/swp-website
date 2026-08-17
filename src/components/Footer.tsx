@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import AppLogo from '@/components/ui/AppLogo';
 
 export default function Footer() {
@@ -26,7 +27,7 @@ export default function Footer() {
 
             <p className="text-white/60 text-sm font-light leading-relaxed">
               บริษัท สหวัฒนาพลาสติก จำกัด (SWP) ผู้นำด้านการผลิตพลาสติก
-              Injection Molding และพัฒนาแม่พิมพ์ ด้วยประสบการณ์กว่า 37 ปี
+              Injection Molding และพัฒนาแม่พิมพ์ ด้วยประสบการณ์กว่า 39 ปี
               เรามุ่งมั่นส่งมอบผลิตภัณฑ์คุณภาพสูง นวัตกรรม
               และคุณค่าระยะยาวแก่ลูกค้า
             </p>
@@ -87,6 +88,7 @@ export default function Footer() {
 
               {/* Phone */}
               <li className="flex items-start gap-3">
+
                 <svg
                   className="w-4 h-4 text-primary mt-0.5 shrink-0"
                   fill="none"
@@ -114,11 +116,13 @@ export default function Footer() {
                     +66 8 3293 8222
                   </p>
                 </div>
+
               </li>
 
 
               {/* Email */}
               <li className="flex items-start gap-3">
+
                 <svg
                   className="w-4 h-4 text-primary mt-0.5 shrink-0"
                   fill="none"
@@ -142,11 +146,13 @@ export default function Footer() {
                     admin@swppart.com
                   </p>
                 </div>
+
               </li>
 
 
               {/* Address */}
               <li className="flex items-start gap-3">
+
                 <svg
                   className="w-4 h-4 text-primary mt-0.5 shrink-0"
                   fill="none"
@@ -156,7 +162,8 @@ export default function Footer() {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 +0l-4.244-4.243a8 8 0 1111.314 0z"
+                    strokeWidth={2}
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                   />
 
                   <path
@@ -172,6 +179,7 @@ export default function Footer() {
                   <br />
                   จ.นนทบุรี 11140
                 </span>
+
               </li>
 
             </ul>
@@ -214,13 +222,19 @@ export default function Footer() {
 
 
       {/* =====================================
-          DECORATIVE FOOTER TEXT
+          DECORATIVE FOOTER LOGO
       ===================================== */}
 
-      <div className="mt-8 overflow-hidden">
-        <p className="footer-big-text text-center tracking-widest select-none">
-          SWP
-        </p>
+      <div className="mt-8 overflow-hidden flex justify-center opacity-">
+
+        <Image
+          src="/assets/images/SWP_LOGO-01-1786592833704.png"
+          alt="SWP Logo"
+          width={400}
+          height={150}
+          className="select-none object-contain"
+        />
+
       </div>
 
     </footer>
