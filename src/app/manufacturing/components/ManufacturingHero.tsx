@@ -19,7 +19,7 @@ const processSteps = [
     number: '03',
     title: 'Injection Molding',
     titleTh: 'การฉีดพลาสติก',
-    description: 'กระบวนการฉีดพลาสติกด้วยเครื่องจักร 80–650 ตัน ควบคุมอุณหภูมิและแรงดันอย่างแม่นยำ รองรับทั้ง Single-shot และ Multi-shot Molding',
+    description: 'กระบวนการฉีดพลาสติกด้วยเครื่องจักร 80–2,000 ตัน ควบคุมอุณหภูมิและแรงดันอย่างแม่นยำ รองรับทั้ง Single-shot และ Multi-shot Molding',
   },
   {
     number: '04',

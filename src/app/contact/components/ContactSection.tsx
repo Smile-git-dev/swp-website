@@ -122,7 +122,7 @@ const contactDetails: ContactDetail[] = [
       </svg>
     ),
     label: 'WORKING HOURS',
-    value: 'Mon – Fri: 8:00 AM – 5:00 PM',
+    value: 'Mon – Sat: 8:00 AM – 5:00 PM',
   },
 ];
 

@@ -62,9 +62,9 @@ export default function AboutHero() {
               <div className="flex items-center gap-4 mb-7">
                 <div className="w-12 h-[3px] bg-primary" />
 
-                <p className="text-primary font-bold text-xs sm:text-sm tracking-[0.35em] uppercase">
+                {/* <p className="text-primary font-bold text-xs sm:text-sm tracking-[0.35em] uppercase">
                   Sahawattana Plastic Co., Ltd.
-                </p>
+                </p> */}
               </div>
 
               {/* Main Title */}
@@ -85,7 +85,7 @@ export default function AboutHero() {
                 {/* Years */}
                 <div className="flex items-center gap-4">
                   <p className="text-primary text-4xl sm:text-5xl font-black leading-none">
-                    37+
+                    39+
                   </p>
 
                   <div className="h-10 w-px bg-white/30" />
@@ -129,22 +129,14 @@ export default function AboutHero() {
           {/* Decorative corner */}
           <div className="absolute bottom-0 right-0 w-32 h-32 sm:w-44 sm:h-44 bg-primary/90 flex items-center justify-center">
             <div className="text-center">
-              <p className="text-white text-3xl sm:text-4xl font-black">
-                SWP
-              </p>
-
-              <div className="w-8 h-[2px] bg-white/70 mx-auto my-2" />
-
-              <p className="text-white/80 text-[9px] tracking-[0.25em] uppercase">
-                Plastic
-              </p>
-            </div>
+              
+             </div>
           </div>
         </div>
       </div>
 
       {/* =====================================================
-          ABOUT CONTENT — ข้อมูลบริษัทเดิม ไม่ลบ
+          ABOUT CONTENT 
       ====================================================== */}
       <div className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -213,7 +205,7 @@ export default function AboutHero() {
               <div className="absolute -bottom-5 -left-5 w-28 h-28 bg-primary flex items-center justify-center shadow-xl">
                 <div className="text-center">
                   <p className="text-white font-black text-2xl leading-none">
-                    37+
+                    39+
                   </p>
 
                   <p className="text-white/80 text-[9px] font-bold tracking-widest uppercase mt-2">
@@ -253,9 +245,9 @@ export default function AboutHero() {
                   </p>
 
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    คุณอรรถวุฒิ รัตนสุวรรณ ก่อตั้ง
-                    ห้างหุ้นส่วนจำกัด สหวัฒนาพลาสติก
-                    ด้วยวิสัยทัศน์ด้านการผลิตพลาสติกคุณภาพสูง
+                    คุณอรรถวุฒิ รัตนสุวรรณ ก่อตั้ง ห้างหุ้นส่วนจำกัด
+                    <br />
+                    สหวัฒนาพลาสติก ด้วยวิสัยทัศน์ด้านการผลิตพลาสติกคุณภาพสูง
                   </p>
                 </div>
               </div>
@@ -265,7 +257,7 @@ export default function AboutHero() {
                 <div className="shrink-0">
                   <div className="w-12 h-12 bg-primary flex items-center justify-center">
                     <span className="text-white font-black text-xs">
-                      37+
+                      39+
                     </span>
                   </div>
                 </div>
@@ -276,7 +268,7 @@ export default function AboutHero() {
                   </p>
 
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    เติบโตต่อเนื่องกว่า 37 ปี
+                    เติบโตต่อเนื่องกว่า 39 ปี
                     ผ่านการพัฒนาคุณภาพ เทคโนโลยี
                     และทรัพยากรบุคคล
                   </p>

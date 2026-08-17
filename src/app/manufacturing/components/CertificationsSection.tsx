@@ -69,8 +69,8 @@ export default function CertificationsSection() {
       </div>
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-4 py-14">
-        {/* SWP Logo */}
-        <div className="mb-4">
+       {/* SWP Logo */}
+        <div className="mb-1">
           <Image
             src="/assets/images/SWP_LOGO-01-1786592833704.png"
             alt="SWP Logo"
@@ -81,19 +81,14 @@ export default function CertificationsSection() {
         </div>
 
         {/* Thai company name */}
-        <h2 className="text-2xl sm:text-3xl font-black mb-3" style={{ color: '#cc0000' }}>
-          บริษัท สหวัฒนาพลาสติก จำกัด
-        </h2>
 
-        {/* Description */}
-        <p className="text-gray-600 text-sm sm:text-base mb-3 max-w-2xl leading-relaxed">
+       <p className="text-gray-600 text-sm sm:text-base mb-3 max-w-none leading-relaxed sm:whitespace-nowrap">
           มีศักยภาพในการผลิตสินค้าพลาสติกหลากหลายประเภท ด้วยระบบการจัดการที่ได้มาตรฐาน และเครื่องจักรที่ทันสมัย
         </p>
 
-        {/* Subtitle */}
-        <p className="text-gray-800 font-bold text-base sm:text-lg mb-10">
-          ระบบมาตรฐานโรงงาน โรงงานดำเนินงานภายใต้มาตรฐานสากล
-        </p>
+      <p className="text-gray-800 font-bold text-base sm:text-lg mb-10 sm:whitespace-nowrap">
+        ระบบมาตรฐานโรงงาน โรงงานดำเนินงานภายใต้มาตรฐานสากล
+      </p>
 
         {/* Certification badges — single horizontal row */}
         <div className="w-full max-w-6xl overflow-x-auto">

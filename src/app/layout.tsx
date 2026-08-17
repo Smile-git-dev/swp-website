@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: '%s | SWP',
   },
   description:
-    'บริษัท สหวัฒนาพลาสติก จำกัด (Sahawattana Plastic Co., Ltd.) ผู้นำด้านการผลิตพลาสติก Injection Molding และพัฒนาแม่พิมพ์ ประสบการณ์กว่า 37 ปี รับรองมาตรฐาน ISO 9001, ISO 14001, ISO 45001 และ SMETA',
+    'บริษัท สหวัฒนาพลาสติก จำกัด (Sahawattana Plastic Co., Ltd.) ผู้นำด้านการผลิตพลาสติก Injection Molding และพัฒนาแม่พิมพ์ ประสบการณ์กว่า 39 ปี รับรองมาตรฐาน ISO 9001, ISO 14001, ISO 45001 และ SMETA',
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
   },

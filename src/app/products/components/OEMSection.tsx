@@ -18,8 +18,8 @@ const oemSteps = [
   {
     step: '03',
     title: 'Mass Production',
-    titleTh: 'ผลิตจำนวนมาก',
-    description: 'ผลิตชิ้นงานตามปริมาณที่ต้องการ ด้วยเครื่องจักร 80–650 ตัน ควบคุมคุณภาพทุกขั้นตอน',
+    titleTh: 'ผลิตตามปริมาณที่ต้องการ',
+    description: 'ผลิตชิ้นงานตามปริมาณที่ต้องการ ด้วยเครื่องจักร 80–2,000 ตัน ควบคุมคุณภาพทุกขั้นตอน',
   },
   {
     step: '04',
@@ -60,17 +60,17 @@ export default function OEMSection() {
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-14 gap-6">
           <div>
-            <p className="text-xs font-bold tracking-widest uppercase text-primary mb-3">OEM SERVICE</p>
+            <p className="text-xs font-bold tracking-widest uppercase text-primary mb-3"></p>
             <h2 className="text-3xl sm:text-4xl font-black text-white leading-tight">
               รับผลิตตามแบบ
               <br />
               <span className="text-primary">OEM / ODM</span>
             </h2>
           </div>
-          <p className="text-white/60 text-sm leading-relaxed lg:max-w-sm">
+          {/* <p className="text-white/60 text-sm leading-relaxed lg:max-w-sm">
             SWP รับผลิตชิ้นส่วนพลาสติกตามแบบของลูกค้า (OEM) และพัฒนาผลิตภัณฑ์ใหม่ร่วมกัน (ODM)
             ด้วยประสบการณ์กว่า 37 ปีในอุตสาหกรรม
-          </p>
+          </p> */}
         </div>
 
         {/* Steps */}

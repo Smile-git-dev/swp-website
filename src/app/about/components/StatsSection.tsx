@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const stats = [
-  { value: 37, suffix: '+', label: 'Years of Experience' },
+  { value: 39, suffix: '+', label: 'Years of Experience' },
   { value: 500, suffix: '+', label: 'Customers Worldwide' },
   { value: 1000, suffix: '+', label: 'Projects Completed' },
   { value: 150, suffix: '+', label: 'Skilled Professionals' },

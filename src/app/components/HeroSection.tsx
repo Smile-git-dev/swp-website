@@ -44,10 +44,7 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24">
         <div className="max-w-2xl">
           {/* Label */}
-          <div className="flex items-center gap-3 mb-6">
-            <span className="w-8 h-0.5 bg-primary" />
-            <span className="section-label text-white/80">QUALIFIED PLASTIC MANUFACTURING SINCE 1988</span>
-          </div>
+         
 
           {/* Headline */}
           <div ref={headlineRef}>

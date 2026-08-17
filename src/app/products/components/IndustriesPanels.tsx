@@ -259,10 +259,7 @@ export default function IndustriesPanels() {
             อุตสาหกรรมที่เราให้บริการ
           </h2>
 
-          <p className="mt-3 text-xl font-semibold text-primary sm:text-2xl">
-            Under One Roof
-          </p>
-
+       
           <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
             ด้วยประสบการณ์ด้านการผลิตพลาสติกแบบ OEM
             บริษัทสามารถรองรับการผลิตสินค้าให้กับหลากหลายอุตสาหกรรม
