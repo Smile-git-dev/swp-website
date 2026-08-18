@@ -117,7 +117,7 @@ export default function CapabilitySection() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <AppImage
-            src="/assets/images/swp-about.png"
+            src="/assets/images/swp-cover.jpg"
             alt="Manufacturing & Standards"
             fill
             sizes="100vw"
