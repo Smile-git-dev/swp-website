@@ -150,7 +150,7 @@ export default function IndustriesPanels() {
       ===================================== */}
 
       <div
-        className="relative w-full aspect-[16/10] overflow-hidden bg-white sm:aspect-[16/8] lg:aspect-[16/7]"
+        className="relative w-full aspect-[16/10] overflow-hidden bg-white sm:aspect-[16/9] lg:aspect-[1920/900]"
         onTouchStart={(e) => {
           touchStartX.current = e.touches[0].clientX;
         }}
@@ -187,36 +187,33 @@ export default function IndustriesPanels() {
               alt={slide.alt}
               width={1920}
               height={900}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-contain"
             />
           </div>
         ))}
 
         {/* ปุ่มซ้าย */}
-
         <button
           type="button"
           onClick={previousSlide}
           aria-label="Previous slide"
-          className="absolute left-5 top-1/2 z-30 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/40 bg-black/20 text-xl text-white backdrop-blur-sm transition hover:bg-white hover:text-black lg:flex"
+          className="absolute left-2 top-1/2 z-30 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/40 bg-black/20 text-lg text-white backdrop-blur-sm transition hover:bg-white hover:text-black sm:left-4 sm:h-12 sm:w-12 lg:flex"
         >
           ←
         </button>
 
         {/* ปุ่มขวา */}
-
         <button
           type="button"
           onClick={nextSlide}
           aria-label="Next slide"
-          className="absolute right-5 top-1/2 z-30 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/40 bg-black/20 text-xl text-white backdrop-blur-sm transition hover:bg-white hover:text-black lg:flex"
+          className="absolute right-2 top-1/2 z-30 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/40 bg-black/20 text-lg text-white backdrop-blur-sm transition hover:bg-white hover:text-black sm:right-4 sm:h-12 sm:w-12 lg:flex"
         >
           →
         </button>
 
         {/* DOT NAVIGATION */}
-
-        <div className="absolute bottom-6 left-1/2 z-30 flex -translate-x-1/2 items-center gap-2.5">
+        <div className="absolute bottom-3 left-1/2 z-30 flex -translate-x-1/2 items-center gap-2 sm:bottom-6 sm:gap-2.5">
           {slides.map((slide, index) => (
             <button
               key={slide.image}
@@ -228,8 +225,8 @@ export default function IndustriesPanels() {
               <span
                 className={`block rounded-full transition-all duration-300 ${
                   activeSlide === index
-                    ? 'h-2 w-7 bg-primary'
-                    : 'h-2 w-2 bg-white/80 hover:bg-white'
+                    ? 'h-1.5 w-6 bg-primary sm:h-2 sm:w-7'
+                    : 'h-1.5 w-1.5 bg-black/40 hover:bg-black/60 sm:h-2 sm:w-2'
                 }`}
               />
             </button>
@@ -259,7 +256,6 @@ export default function IndustriesPanels() {
             อุตสาหกรรมที่เราให้บริการ
           </h2>
 
-       
           <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
             ด้วยประสบการณ์ด้านการผลิตพลาสติกแบบ OEM
             บริษัทสามารถรองรับการผลิตสินค้าให้กับหลากหลายอุตสาหกรรม

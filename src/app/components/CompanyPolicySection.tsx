@@ -6,22 +6,22 @@ import { FileText, Download } from 'lucide-react';
 const policies = [
   {
     number: '01',
-    title: 'คุณภาพบริการ สินค้าโดนใจ',
-    desc: 'มุ่งมั่นผลิตสินค้าและให้บริการที่ตอบสนองความต้องการและความพึงพอใจสูงสุดของลูกค้า',
+    title: 'คุณภาพ',
+    desc: 'ผลิตสินค้าที่มีคุณภาพมาตรฐานที่กำหนด เพื่อตอบสนองความพึงพอใจของลูกค้า และพัฒนาองค์กรสู่มาตรฐานสากล',
   },
   {
     number: '02',
-    title: 'ใส่ใจความปลอดภัย สุขอนามัยทุกคน',
-    desc: 'ยกระดับมาตรฐานอาชีวอนามัยและความปลอดภัย เพื่อดูแลสุขภาวะของผู้มีส่วนได้เสียทุกฝ่าย',
+    title: 'ความปลอดภัย & อาชีวอนามัย',
+    desc: 'ดูแลสุขภาพและความปลอดภัยในการทำงาน ให้ครอบคลุมถึงผู้รับเหมา ผู้เยี่ยมชม ผู้มีส่วนได้ส่วนเสีย และบุคคลที่อยู่ภายใต้การควบคุมของบริษัท',
   },
   {
     number: '03',
-    title: 'รักษ์สิ่งแวดล้อม สู่มาตรฐานสากล',
-    desc: 'ดำเนินธุรกิจที่เป็นมิตรต่อสิ่งแวดล้อม พร้อมยกระดับองค์กรให้สอดคล้องกับมาตรฐานสากล',
+    title: 'สิ่งแวดล้อม',
+    desc: 'ดูแลสิ่งแวดล้อมในการดำเนินงาน โดยมุ่งเน้นการลดของเสีย การลดมลพิษ และการอนุรักษ์ทรัพยากรธรรมชาติ',
   },
   {
     number: '04',
-    title: 'พัฒนาบุคลากร เติบโตยั่งยืนไปด้วยกัน',
+    title: 'พัฒนาบุคลากร',
     desc: 'ส่งเสริมและพัฒนาศักยภาพของพนักงานทุกคน ให้เติบโตอย่างมั่นคงไปพร้อมกับบริษัท',
   },
 ];
@@ -80,9 +80,23 @@ export default function CompanyPolicySection() {
 
           <div className="w-10 h-0.5 bg-primary mx-auto mb-4" />
 
-          <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            
-“ผลิตสินค้าและบริการที่ตอบสนองความพึงพอใจของลูกค้า และพัฒนาองค์กรสู่มาตรฐานสากล ในด้านคุณภาพ ความปลอดภัย อาชีวอนามัยของผู้มีส่วนได้เสีย และเป็นมิตรต่อสิ่งแวดล้อม พร้อมทั้งพัฒนาบุคลากรให้มีคุณภาพ มีศักยภาพ และเติบโตไปพร้อมกับองค์กร”
+          <p
+            lang="th"
+            className="
+              text-sm
+              text-muted-foreground
+              leading-relaxed
+              max-w-3xl
+              mx-auto
+              [word-break:keep-all]
+              break-words
+            "
+          >
+            “ผลิตสินค้าและบริการที่ตอบสนองความพึงพอใจของลูกค้า
+            และพัฒนาองค์กรสู่มาตรฐานสากล ในด้านคุณภาพ ความปลอดภัย
+            อาชีวอนามัยของผู้มีส่วนได้เสีย และเป็นมิตรต่อสิ่งแวดล้อม
+            พร้อมทั้งพัฒนาบุคลากรให้มีคุณภาพ มีศักยภาพ
+            และเติบโตไปพร้อมกับองค์กร”
           </p>
 
         </div>
@@ -94,7 +108,7 @@ export default function CompanyPolicySection() {
             grid
             grid-cols-1
             sm:grid-cols-2
-            lg:grid-cols-4
+            xl:grid-cols-4
             divide-y
             sm:divide-y-0
             sm:divide-x
@@ -113,8 +127,8 @@ export default function CompanyPolicySection() {
               className="
                 flex
                 items-start
-                gap-4
-                px-6
+                gap-3
+                px-5
                 py-6
                 scroll-reveal-hidden
               "
@@ -146,9 +160,10 @@ export default function CompanyPolicySection() {
 
 
               {/* Content */}
-              <div className="min-w-0">
+              <div className="min-w-0 flex-1">
 
                 <h3
+                  lang="th"
                   className="
                     text-sm
                     font-black
@@ -156,16 +171,21 @@ export default function CompanyPolicySection() {
                     text-foreground
                     leading-snug
                     mb-2
+                    [word-break:keep-all]
+                    break-words
                   "
                 >
                   {policy.title}
                 </h3>
 
                 <p
+                  lang="th"
                   className="
                     text-xs
                     text-muted-foreground
-                    leading-relaxed
+                    leading-6
+                    [word-break:keep-all]
+                    break-words
                   "
                 >
                   {policy.desc}
@@ -230,7 +250,16 @@ export default function CompanyPolicySection() {
                   จรรยาบรรณบริษัท
                 </h3>
 
-                <p className="text-xs text-muted-foreground leading-relaxed">
+                <p
+                  lang="th"
+                  className="
+                    text-xs
+                    text-muted-foreground
+                    leading-relaxed
+                    [word-break:keep-all]
+                    break-words
+                  "
+                >
                   ดาวน์โหลดเอกสารจรรยาบรรณและแนวปฏิบัติของบริษัทฉบับเต็ม
                 </p>
 

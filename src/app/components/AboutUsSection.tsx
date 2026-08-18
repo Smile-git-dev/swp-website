@@ -26,8 +26,10 @@ export default function AboutUsSection() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            (entry.target as HTMLElement).style.opacity = '1';
-            (entry.target as HTMLElement).style.transform = 'translateY(0)';
+            const element = entry.target as HTMLElement;
+
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
           }
         });
       },
@@ -47,32 +49,34 @@ export default function AboutUsSection() {
 
   return (
     <section
-      className="py-16 sm:py-20 bg-white"
+      className="bg-white py-16 sm:py-20"
       aria-label="เกี่ยวกับเรา"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
 
-          {/* Left: heading, copy, feature row */}
+          {/* Left: Content */}
           <div
             ref={leftRef}
             style={{
               transition: 'opacity 0.7s ease, transform 0.7s ease',
             }}
           >
-            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 leading-tight mb-2">
-              ABOUT  US
+            {/* Heading */}
+            <h2 className="mb-2 text-3xl font-black leading-tight text-gray-900 sm:text-4xl">
+              ABOUT US
             </h2>
 
-            <p className="text-lg sm:text-xl font-bold text-gray-500 mb-6">
+            <p className="mb-6 text-lg font-bold text-gray-500 sm:text-xl">
               Sahawattana Plastic Co., Ltd.
             </p>
 
-            <div className="space-y-4 text-gray-600 text-sm sm:text-base leading-relaxed">
+            {/* Content */}
+            <div className="max-w-[680px] space-y-4 text-sm leading-[1.9] text-gray-600 sm:text-base sm:leading-[2]">
               <p>
                 ผู้ผลิตผลิตภัณฑ์พลาสติกที่มีประสบการณ์ยาวนานในประเทศไทย
                 ก่อตั้งขึ้นในปี พ.ศ. 2531 โดย{' '}
-                <strong className="text-gray-800">
+                <strong className="font-bold text-gray-800">
                   คุณอรรถวุฒิ รัตนสุวรรณ
                 </strong>{' '}
                 ด้วยวิสัยทัศน์ที่เล็งเห็นว่า พลาสติกจะมีบทบาทสำคัญต่อการ
@@ -83,7 +87,7 @@ export default function AboutUsSection() {
 
               <p>
                 ในช่วงเริ่มต้น บริษัทดำเนินธุรกิจในรูปแบบ{' '}
-                <strong className="text-gray-800">
+                <strong className="font-bold text-gray-800">
                   ห้างหุ้นส่วนจำกัด สหวัฒนาพลาสติก
                 </strong>{' '}
                 และสามารถเติบโตได้อย่างมั่นคง
@@ -98,11 +102,11 @@ export default function AboutUsSection() {
                 บริษัทจึงได้ขยายขีดความสามารถในการผลิต
                 พร้อมทั้งพัฒนาระบบการบริหารจัดการให้มีประสิทธิภาพมากยิ่งขึ้น
                 จนกระทั่งได้มีการปรับโครงสร้างองค์กรเป็น{' '}
-                <strong className="text-gray-800">
+                <strong className="font-bold text-gray-800">
                   บริษัท สหวัฒนาพลาสติก จำกัด
                 </strong>{' '}
                 เมื่อวันที่{' '}
-                <strong className="text-gray-800">
+                <strong className="font-bold text-gray-800">
                   1 ธันวาคม พ.ศ. 2560
                 </strong>{' '}
                 เพื่อรองรับการเติบโตของธุรกิจ
@@ -113,7 +117,7 @@ export default function AboutUsSection() {
                 ปัจจุบัน บริษัทมุ่งเน้นการพัฒนาผลิตภัณฑ์พลาสติกที่มีคุณภาพ
                 เพื่อตอบสนองความต้องการของลูกค้าในหลากหลายอุตสาหกรรม
                 โดยยึดมั่นในมาตรฐานด้าน{' '}
-                <strong className="text-gray-800">
+                <strong className="font-bold text-gray-800">
                   คุณภาพ ความปลอดภัย อาชีวอนามัย
                   และการดูแลสิ่งแวดล้อม
                 </strong>{' '}
@@ -122,26 +126,28 @@ export default function AboutUsSection() {
               </p>
             </div>
 
-            {/* Two-item feature row */}
-            <div className="grid grid-cols-2 divide-x divide-gray-200 mt-8">
-              {features.map(({ icon: Icon, title, description }) => (
+            {/* Features */}
+            <div className="mt-8 grid max-w-[680px] grid-cols-1 divide-y divide-gray-200 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
+              {features.map(({ icon: Icon, title, description }, index) => (
                 <div
                   key={title}
-                  className="pr-6 first:pl-0 pl-6"
+                  className={`py-5 sm:py-0 ${
+                    index === 0 ? 'sm:pr-6' : 'sm:pl-6'
+                  }`}
                 >
-                  <div className="flex items-center gap-2 mb-2">
+                  <div className="mb-2 flex items-center gap-2">
                     <Icon
                       size={20}
                       strokeWidth={2}
-                      className="text-primary shrink-0"
+                      className="shrink-0 text-primary"
                     />
 
-                    <h4 className="text-sm sm:text-base font-bold text-gray-900">
+                    <h4 className="text-sm font-bold text-gray-900 sm:text-base">
                       {title}
                     </h4>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-gray-500 leading-relaxed">
+                  <p className="text-xs leading-relaxed text-gray-500 sm:text-sm">
                     {description}
                   </p>
                 </div>
@@ -149,10 +155,10 @@ export default function AboutUsSection() {
             </div>
           </div>
 
-          {/* Right: factory photo */}
+          {/* Right: Factory Photo */}
           <div
             ref={rightRef}
-            className="rounded-2xl overflow-hidden shadow-sm"
+            className="overflow-hidden rounded-2xl shadow-sm"
             style={{
               transition:
                 'opacity 0.7s ease 0.15s, transform 0.7s ease 0.15s',
@@ -163,7 +169,7 @@ export default function AboutUsSection() {
               alt="โรงงานผลิตพลาสติก สหวัฒนาพลาสติก — เครื่องจักร Injection Molding ภายในโรงงาน"
               width={700}
               height={560}
-              className="w-full h-auto object-cover"
+              className="h-auto w-full object-cover"
               style={{
                 maxHeight: '560px',
                 objectFit: 'cover',
