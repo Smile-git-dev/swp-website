@@ -14,7 +14,7 @@ const CATALOG = {
   name: 'SWP Product Catalog',
   description:
     'แคตตาล็อกผลิตภัณฑ์และบริการของ SWP รวมข้อมูลกำลังการผลิต มาตรฐานคุณภาพ และบริการฉีดขึ้นรูปพลาสติกครบวงจร',
-  href: '/assets/brochures/catalog-swp-2027.pdf',
+  href: '/assets/brochures/CATALOG SWP 2027.pdf',
   edition: '2027',
   language: 'ภาษาไทย',
   format: 'PDF',

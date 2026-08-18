@@ -186,8 +186,8 @@ export default function CapabilitySection() {
               <p className="text-xs font-bold tracking-widest uppercase text-white/80 mb-4">
                 PRODUCTION CAPACITY
               </p>
-
-              <h3 className="text-2xl font-black leading-tight">
+                
+                <h3 className="text-2xl font-black leading-tight text-white">
                 ความสามารถ
                 <br />
                 ในการรองรับการผลิต

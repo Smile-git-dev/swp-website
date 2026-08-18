@@ -97,7 +97,7 @@ const contactDetails: ContactDetail[] = [
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0 3-4.03 3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0 3-4.03 3-9s-1.343-9 3-9m-9 9a9 9 0 019-9"
         />
       </svg>
     ),
@@ -224,10 +224,11 @@ export default function ContactSection() {
 
           <div ref={rightRef}>
             <div className="h-80 bg-muted border border-border flex items-center justify-center overflow-hidden relative">
+
               <div className="absolute inset-0">
                 <iframe
-                  title="SWP Company Location Map — Bang Yai, Nonthaburi"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.5!2d100.4167!3d13.8667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29e8b00000001%3A0x0!2zMTPCsDUyJzAwLjAiTiAxMDDCsDI1JzAwLjAiRQ!5e0!3m2!1sth!2sth!4v1"
+                  title="Sahawattana Plastic Co., Ltd. — Bang Yai, Nonthaburi"
+                  src="https://www.google.com/maps?q=13.830354597813512,100.32419711349344&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -240,6 +241,7 @@ export default function ContactSection() {
               <div className="relative z-10 bg-white/90 px-4 py-2 text-xs font-bold tracking-wide text-foreground">
                 Sahawattana Plastic Co., Ltd. — Bang Yai, Nonthaburi
               </div>
+
             </div>
           </div>
 
