@@ -1,8 +1,30 @@
 import type { MetadataRoute } from 'next';
 
-// SEO not implemented yet.
-// Next.js requires a default export when this file exists in the app directory.
-// To implement SEO in the future, replace the empty array with real URLs.
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [];
+  return [
+    {
+      url: 'https://www.swp.co.th/',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://www.swp.co.th/about',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://www.swp.co.th/capabilities',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://www.swp.co.th/manufacturing',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://www.swp.co.th/brochure',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://www.swp.co.th/contact',
+      lastModified: new Date(),
+    },
+  ];
 }
