@@ -102,7 +102,7 @@ const contactDetails: ContactDetail[] = [
       </svg>
     ),
     label: 'WEBSITE',
-    value: 'www.swppart.co.th',
+    value: 'www.swp.co.th',
   },
 
   {
