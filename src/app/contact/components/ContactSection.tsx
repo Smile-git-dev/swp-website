@@ -53,9 +53,9 @@ const contactDetails: ContactDetail[] = [
     label: 'PHONE',
     value: (
       <div className="space-y-1">
-        <span className="block">+66 2927 7386-8</span>
-        <span className="block">+66 8 259 2623</span>
-        <span className="block">+66 8 3293 8222</span>
+        <span className="block">+66 98 259 2623</span>
+        <span className="block">+66 2 927 3898</span>
+        <span className="block">+66 83 293 8222</span>
       </div>
     ),
   },
