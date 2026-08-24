@@ -79,8 +79,8 @@ const contactDetails: ContactDetail[] = [
     label: 'EMAIL',
     value: (
       <div className="space-y-1">
-        <span className="block">saleoffice@swppart.com</span>
-        <span className="block">admin@swppart.com</span>
+        <span className="block">saleoffice@swp.co.th</span>
+        <span className="block">admin@swp.co.th</span>
       </div>
     ),
   },

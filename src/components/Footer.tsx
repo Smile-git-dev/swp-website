@@ -105,15 +105,15 @@ export default function Footer() {
 
                 <div>
                   <p className="text-white/70 text-sm">
-                    +66 2927 7386-8
+                    +66 2 927 3898
                   </p>
 
                   <p className="text-white/70 text-sm">
-                    +66 8 259 2623
+                    +66 98 259 2623
                   </p>
 
                   <p className="text-white/70 text-sm">
-                    +66 8 3293 8222
+                    +66 83 293 8222
                   </p>
                 </div>
 
@@ -139,11 +139,11 @@ export default function Footer() {
 
                 <div>
                   <p className="text-white/70 text-sm">
-                    saleoffice@swppart.com
+                    saleoffice@swp.co.th
                   </p>
 
                   <p className="text-white/70 text-sm">
-                    admin@swppart.com
+                    admin@swp.co.th
                   </p>
                 </div>
 
