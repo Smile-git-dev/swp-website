@@ -54,7 +54,7 @@ const contactDetails: ContactDetail[] = [
     value: (
       <div className="space-y-1">
         <span className="block">+66 98 259 2623</span>
-        <span className="block">+66 2 927 3898</span>
+        <span className="block">+66 2 927 7386</span>
         <span className="block">+66 83 293 8222</span>
       </div>
     ),
